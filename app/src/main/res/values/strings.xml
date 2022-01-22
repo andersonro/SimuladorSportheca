@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SimuladorSportheca</string>
+    <string name="button_fb_simulate">Botão de simulação de resultados.</string>
 </resources>
