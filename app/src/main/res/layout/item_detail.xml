@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/margin_default"
+    android:layout_margin="@dimen/card_detail_margin">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_detail_team_home"
+            android:layout_width="@dimen/img_team"
+            android:layout_height="@dimen/img_team"
+            android:layout_marginLeft="@dimen/margin_default"
+            android:layout_marginTop="@dimen/margin_default"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:src="@tools:sample/avatars"/>
+
+        <TextView
+            android:id="@+id/txt_detail_team_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Time Casa"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_marginBottom="@dimen/margin_default"
+            app:layout_constraintTop_toBottomOf="@+id/iv_detail_team_home"
+            app:layout_constraintStart_toStartOf="@+id/iv_detail_team_home"
+            app:layout_constraintEnd_toEndOf="@+id/iv_detail_team_home"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_detail_score_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            tools:text="99"
+            android:layout_marginLeft="@dimen/margin_default"
+            app:layout_constraintTop_toTopOf="@id/iv_detail_team_home"
+            app:layout_constraintStart_toEndOf="@id/iv_detail_team_home"
+            app:layout_constraintBottom_toBottomOf="@id/iv_detail_team_home" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_detail_team_visitor"
+            android:layout_width="@dimen/img_team"
+            android:layout_height="@dimen/img_team"
+            android:layout_marginRight="@dimen/margin_default"
+            android:layout_marginTop="@dimen/margin_default"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:src="@tools:sample/avatars"/>
+
+        <TextView
+            android:id="@+id/txt_detail_team_visitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Time Casa"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_marginBottom="@dimen/margin_default"
+            app:layout_constraintTop_toBottomOf="@+id/iv_detail_team_visitor"
+            app:layout_constraintStart_toStartOf="@+id/iv_detail_team_visitor"
+            app:layout_constraintEnd_toEndOf="@+id/iv_detail_team_visitor"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_detail_score_visitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            tools:text="99"
+            android:layout_marginRight="@dimen/margin_default"
+            app:layout_constraintTop_toTopOf="@id/iv_detail_team_visitor"
+            app:layout_constraintEnd_toStartOf="@id/iv_detail_team_visitor"
+            app:layout_constraintBottom_toBottomOf="@id/iv_detail_team_visitor" />
+
+        <TextView
+            android:id="@+id/tv_score_verse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_versus"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/tv_detail_score_home"
+            app:layout_constraintBottom_toBottomOf="@id/tv_detail_score_home"
+            app:layout_constraintStart_toEndOf="@id/tv_detail_score_home"
+            app:layout_constraintEnd_toStartOf="@id/tv_detail_score_visitor" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
